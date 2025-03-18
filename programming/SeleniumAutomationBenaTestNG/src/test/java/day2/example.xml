@@ -1,0 +1,15 @@
+<codewise>
+    <students>
+
+        <student>
+            <name age="18">AIGERIM</name>
+        </student>
+        <student>
+            <name age="9">DAvid</name>
+            <address>LA</address>
+            <batch>5</batch>
+        </student>
+    </students>
+
+
+</codewise>

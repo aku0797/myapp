@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Paralel tests intro2">
+
+<test name="CHeckout Tests" enabled="false">
+    <groups>
+        <run>
+            <include name="sanity"></include>
+        </run>
+    </groups>
+    <classes>
+        <class name="tests.examplefolders.SheinTest"></class>
+        <class name="tests.examplefolders.EtsyTest"></class>
+        <class name="tests.examplefolders.AmazonTest"></class>
+    </classes>
+</test>
+
+    <test name="login Test" >
+<groups>
+    <run>
+        <include name="login"></include>
+    </run>
+</groups>
+
+    </test>
+</suite>

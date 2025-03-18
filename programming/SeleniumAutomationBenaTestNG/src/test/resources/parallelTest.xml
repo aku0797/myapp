@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Paralel tests intro" parallel="classes" thread-count="3">
+    <test name="SAnity tests">
+        <classes>
+
+            <class name="tests.examplefolders.AmazonTest"></class>
+            <class name="tests.examplefolders.EtsyTest"></class>
+            <class name="tests.examplefolders.SheinTest"></class>
+        </classes>
+
+
+    </test>
+    
+    <test name="CHeckout Tests">
+        <groups>
+            <run>
+                <include name="sanity"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.examplefolders.SheinTest"></class>
+            <class name="tests.examplefolders.EtsyTest"></class>
+            <class name="tests.examplefolders.AmazonTest"></class>
+        </classes>
+    </test>
+
+
+</suite>

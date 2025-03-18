@@ -1,0 +1,24 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utillities.Driver;
+
+public class LoginPage {
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+    @FindBy(xpath = "//input[@id='user-name']")
+    public WebElement usernameInputField;
+
+
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement passwordInputField;
+
+
+    @FindBy(xpath = "//input[@id='login-button']")
+    public WebElement loginButton;
+
+
+}
